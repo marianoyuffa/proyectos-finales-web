@@ -3,51 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Porfolio académico de Mariano Yuffa: proyectos web de formación sobre clases de portugués y cuatro museos de Ciudad de México.">
-    <meta property="og:title" content="Porfolio académico | Mariano Yuffa">
-    <meta property="og:description" content="Conocé dos proyectos finales de formación web: un sitio de clases de portugués con Bootstrap y un recorrido por cuatro museos de Ciudad de México.">
+    <meta name="description" content="Portfolio académico de Mariano Yuffa: proyectos de desarrollo web con HTML, CSS y Bootstrap.">
+    <meta name="theme-color" content="#f5f7f8">
+    <meta property="og:title" content="Mariano Yuffa | Portfolio de desarrollo web">
+    <meta property="og:description" content="Proyectos académicos de desarrollo web: un sitio de clases de portugués y una guía de museos de Ciudad de México.">
     <meta property="og:type" content="website">
-    <title>Porfolio académico | Mariano Yuffa</title>
+    <meta property="og:url" content="https://marianoyuffa.github.io/proyectos-finales-web/">
+    <title>Mariano Yuffa | Portfolio de desarrollo web</title>
     <style>
-        body {
-            font-family: system-ui, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            color: #202124;
+        :root {
+            color-scheme: light;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            color: #17212b;
             background: #f5f7f8;
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+            line-height: 1.65;
         }
-        main {
-            max-width: 760px;
-            margin: 4rem auto;
-            padding: 0 1.25rem;
+        * {
+            box-sizing: border-box;
         }
-        section {
-            margin: 1rem 0;
-            padding: 1.25rem;
-            background: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 1px 5px #00000018;
+        body {
+            margin: 0;
         }
         a {
             color: #075e3b;
+            text-underline-offset: 0.2em;
+        }
+        a:focus-visible {
+            outline: 3px solid #075e3b;
+            outline-offset: 4px;
+            border-radius: 2px;
+        }
+        .container {
+            width: min(100% - 2rem, 960px);
+            margin-inline: auto;
+        }
+        header {
+            padding: clamp(3rem, 9vw, 6rem) 0 3rem;
+            background: #e8f1ed;
+            border-bottom: 1px solid #d5e2dc;
+        }
+        .eyebrow {
+            margin: 0 0 0.5rem;
+            color: #075e3b;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        h1, h2, h3, p {
+            margin-top: 0;
+        }
+        h1 {
+            margin-bottom: 0.75rem;
+            font-size: clamp(2.25rem, 7vw, 3.75rem);
+            line-height: 1.1;
+        }
+        .intro {
+            max-width: 670px;
+            margin-bottom: 1.25rem;
+            font-size: 1.125rem;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .skills li {
+            padding: 0.3rem 0.7rem;
+            border: 1px solid #b9d1c5;
+            border-radius: 999px;
+            background: #fff;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        main {
+            padding-block: 3rem;
+        }
+        .section-heading {
+            margin-bottom: 1.25rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+            gap: 1.25rem;
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: clamp(1.25rem, 4vw, 2rem);
+            border: 1px solid #dce3e0;
+            border-radius: 0.75rem;
+            background: #fff;
+            box-shadow: 0 2px 8px #17212b0d;
+        }
+        .project h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+        .project p {
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            color: #46534d;
+            font-size: 0.925rem;
+        }
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.25rem;
+            margin-top: auto;
+            padding-top: 0.5rem;
+            font-weight: 650;
+        }
+        .note {
+            margin: 1.5rem 0 0;
+            color: #46534d;
+            font-size: 0.925rem;
+        }
+        footer {
+            padding: 1.5rem 0;
+            border-top: 1px solid #dce3e0;
+            background: #fff;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            a {
+                transition: color 150ms ease;
+            }
         }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Portfolio académico</h1>
-        <p>Una selección de los trabajos que desarrollé durante mi formación:</p>
-        <section>
-            <h2>Clases de portugués</h2>
-            <p><strong>Trabajo final de febrero de 2026.</strong> Sitio multipágina desarrollado con Bootstrap para presentar clases de portugués. Incluye navegación compartida, carrusel de imágenes, pestañas para explicar la metodología, contenido en columnas y un formulario de contacto de muestra, sin envío de datos.</p>
-            <a href="Clases/index.html">Visitar el proyecto de clases de portugués</a>
+    <header>
+        <div class="container">
+            <p class="eyebrow">Portfolio académico · Desarrollo web</p>
+            <h1>Mariano Yuffa</h1>
+            <p class="intro">Una selección de proyectos realizados durante mi formación en desarrollo web. En cada trabajo exploré la estructura de contenidos, la navegación y la presentación responsive.</p>
+            <ul class="skills" aria-label="Tecnologías utilizadas">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap 5</li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section aria-labelledby="projects-heading">
+            <h2 class="section-heading" id="projects-heading">Proyectos seleccionados</h2>
+            <div class="projects">
+                <article class="project">
+                    <p class="eyebrow">Proyecto académico · Febrero de 2026</p>
+                    <h3>Clases de portugués</h3>
+                    <p>Sitio multipágina para presentar clases de portugués. Incluye navegación entre páginas, carrusel de imágenes, pestañas de metodología y un diseño organizado en columnas.</p>
+                    <p class="project-meta"><strong>Tecnologías:</strong> HTML y Bootstrap 5.3.2.</p>
+                    <p class="project-meta"><strong>Alcance:</strong> proyecto educativo estático. El formulario es una maqueta y no envía datos.</p>
+                    <div class="project-links">
+                        <a href="Clases/index.html">Ver sitio</a>
+                        <a href="https://github.com/marianoyuffa/proyectos-finales-web/tree/main/Clases" target="_blank" rel="noopener noreferrer">Ver archivos fuente en GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <p class="eyebrow">Proyecto académico · Diciembre de 2024</p>
+                    <h3>Museos de Ciudad de México</h3>
+                    <p>Guía informativa sobre el Museo Nacional de Antropología, el Museo de Historia Natural, el Papalote Museo del Niño y Universum. Las páginas comparten una plantilla con información distribuida en tres secciones.</p>
+                    <p class="project-meta"><strong>Tecnologías:</strong> HTML y CSS.</p>
+                    <p class="project-meta"><strong>Alcance:</strong> práctica de estructura multipágina, navegación, contenido en columnas e imágenes con texto alternativo.</p>
+                    <div class="project-links">
+                        <a href="ProyectoMuseos/index.html">Ver sitio</a>
+                        <a href="https://github.com/marianoyuffa/proyectos-finales-web/tree/main/ProyectoMuseos" target="_blank" rel="noopener noreferrer">Ver archivos fuente en GitHub</a>
+                    </div>
+                </article>
+            </div>
+            <p class="note">En el proyecto de museos, los horarios, precios y exposiciones pueden haber cambiado. Consulta los sitios oficiales para obtener información vigente.</p>
         </section>
-        <section>
-            <h2>Museos de Ciudad de México</h2>
-            <p><strong>Trabajo final de diciembre de 2024.</strong> Sitio informativo sobre el Museo Nacional de Antropología, el Museo de Historia Natural, el Papalote Museo del Niño y Universum. Reutiliza una plantilla de tres secciones y presenta antecedentes, exposiciones, horarios, precios, ubicación y enlaces oficiales, con fotografías y texto alternativo.</p>
-            <a href="ProyectoMuseos/index.html">Visitar el proyecto de museos</a>
-        </section>
-        <p><small>Proyectos académicos. La información sobre horarios, precios y exposiciones puede ser histórica; verificá los datos vigentes en los sitios oficiales.</small></p>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>Mariano Yuffa · <a href="https://github.com/marianoyuffa" target="_blank" rel="noopener noreferrer">Perfil de GitHub</a></p>
+        </div>
+    </footer>
 </body>
 </html>

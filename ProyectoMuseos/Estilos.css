@@ -73,11 +73,9 @@ nav ul li a {
 
 /* Pseudo clase para los hipervínculos */
 nav ul li a:focus {
-    background-color: #00008b;
-    /* Fondo azul oscuro al pasar el mouse */
-    color: white;
-    /* Letra blanca */
-    outline: 3px solid #00008b;
+    background-color: #ffff00;
+    color: black;
+    outline: 3px solid black;
     outline-offset: 2px;
 }
 

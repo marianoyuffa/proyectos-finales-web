@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio académico de Mariano Yuffa: proyectos de desarrollo web con HTML, CSS y Bootstrap.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23198754'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EMY%3C/text%3E%3C/svg%3E">
     <meta name="theme-color" content="#f5f7f8">
     <meta property="og:title" content="Mariano Yuffa | Portfolio de desarrollo web">
     <meta property="og:description" content="Proyectos académicos de desarrollo web: un sitio de clases de portugués y una guía de museos de Ciudad de México.">
@@ -135,6 +136,26 @@
         footer p {
             margin: 0;
         }
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-weight: 650;
+        }
         @media (prefers-reduced-motion: no-preference) {
             a {
                 transition: color 150ms ease;
@@ -148,10 +169,12 @@
             <p class="eyebrow">Portfolio académico · Desarrollo web</p>
             <h1>Mariano Yuffa</h1>
             <p class="intro">Una selección de proyectos realizados durante mi formación en desarrollo web. En cada trabajo exploré la estructura de contenidos, la navegación y la presentación responsive.</p>
+            <p class="intro">Trabajo con foco en accesibilidad: uso el lector de pantalla NVDA para comprobar mis páginas.</p>
             <ul class="skills" aria-label="Tecnologías utilizadas">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Bootstrap 5</li>
+                <li>Accesibilidad web</li>
             </ul>
         </div>
     </header>
@@ -168,7 +191,7 @@
                     <p class="project-meta"><strong>Alcance:</strong> proyecto educativo estático. El formulario es una maqueta y no envía datos.</p>
                     <div class="project-links">
                         <a href="Clases/index.html">Ver sitio</a>
-                        <a href="https://github.com/marianoyuffa/proyectos-finales-web/tree/main/Clases" target="_blank" rel="noopener noreferrer">Ver archivos fuente en GitHub</a>
+                        <a href="https://github.com/marianoyuffa/proyectos-finales-web/tree/main/Clases" target="_blank" rel="noopener noreferrer">Ver archivos fuente en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
                     </div>
                 </article>
 
@@ -180,17 +203,26 @@
                     <p class="project-meta"><strong>Alcance:</strong> práctica de estructura multipágina, navegación, contenido en columnas e imágenes con texto alternativo.</p>
                     <div class="project-links">
                         <a href="ProyectoMuseos/index.html">Ver sitio</a>
-                        <a href="https://github.com/marianoyuffa/proyectos-finales-web/tree/main/ProyectoMuseos" target="_blank" rel="noopener noreferrer">Ver archivos fuente en GitHub</a>
+                        <a href="https://github.com/marianoyuffa/proyectos-finales-web/tree/main/ProyectoMuseos" target="_blank" rel="noopener noreferrer">Ver archivos fuente en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
                     </div>
                 </article>
             </div>
-            <p class="note">En el proyecto de museos, los horarios, precios y exposiciones pueden haber cambiado. Consulta los sitios oficiales para obtener información vigente.</p>
+            <p class="note">En el proyecto de museos, los horarios, precios y exposiciones pueden haber cambiado. La información de los museos fue relevada en diciembre de 2024. Consultá los sitios oficiales para obtener datos vigentes.</p>
+        </section>
+
+        <section aria-labelledby="contact-heading" style="margin-top: 3rem;">
+            <h2 class="section-heading" id="contact-heading">Contacto</h2>
+            <ul class="contact-list">
+                <li><a href="mailto:marianonicolas@live.com">marianonicolas@live.com</a></li>
+                <li><a href="https://linkedin.com/in/marianoyuffa" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+                <li><a href="https://github.com/marianoyuffa" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>Mariano Yuffa · <a href="https://github.com/marianoyuffa" target="_blank" rel="noopener noreferrer">Perfil de GitHub</a></p>
+            <p>Mariano Yuffa · <a href="https://github.com/marianoyuffa" target="_blank" rel="noopener noreferrer">Perfil de GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></p>
         </div>
     </footer>
 </body>

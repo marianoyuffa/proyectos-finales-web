@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía del Museo de Historia Natural y Cultura Ambiental de Ciudad de México: antecedentes, exposiciones, horarios y precios.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23198754'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EMY%3C/text%3E%3C/svg%3E">
     <title>Museo de Historia Natural y Cultura Ambiental</title>
     <link rel="stylesheet" href="Estilos.css">
 </head>
@@ -12,10 +14,10 @@
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
     <header>
         <h1>Museo de Historia Natural</h1>
-        <nav>
+        <nav aria-label="Museos">
             <ul>
                 <li><a href="index.html">Antropología</a></li>
-                <li><a href="Historia.html">Historia Natural</a></li>
+                <li><a href="Historia.html" aria-current="page">Historia Natural</a></li>
                 <li><a href="Papalote.html">Papalote</a></li>
                 <li><a href="Universum.html">Universum</a></li>
             </ul>
@@ -23,13 +25,14 @@
     </header>
 
     <main id="contenido" tabindex="-1">
+        <p class="aviso"><strong>Información relevada en diciembre de 2024.</strong> Exposiciones, horarios y precios pueden haber cambiado; consultá el sitio oficial del museo.</p>
+
         <!-- Caja principal que contiene las secciones izquierda y derecha -->
         <div class="cajaprincipal">
             <!-- Caja izquierda: Imagen -->
             <div class="cajaizquierda">
                 <div class="cajaimagen">
-                    <img src="Imagenes/Entrada_principal_del_Museo_de_Historia_Natural_y_Cultura_Ambiental.jpg" alt="En la imagen se puede observar la entrada principal del Museo de Historia Natural de la Ciudad de México"
-                         width="100%" height="100%">
+                    <img src="Imagenes/Entrada_principal_del_Museo_de_Historia_Natural_y_Cultura_Ambiental.jpg" alt="En la imagen se puede observar la entrada principal del Museo de Historia Natural de la Ciudad de México">
                 </div>
             </div>
 
@@ -37,7 +40,7 @@
             <div class="cajaderecha">
                 <h2>Antecedentes</h2>
                 <p>
-                    El Museo de Historia Natural y Cultura Ambiental fue inaugurado el 24 de octubre de 1964. Se encuentra en la Segunda Sección del Bosque de Chapultepec y depende de la Secretaría del Medio Ambiente de la Ciudad de México. 
+                    El Museo de Historia Natural y Cultura Ambiental fue inaugurado el 24 de octubre de 1964. Se encuentra en la Segunda Sección del Bosque de Chapultepec y depende de la Secretaría del Medio Ambiente de la Ciudad de México.
                     Es un espacio de divulgación científica y cultural que promueve el conocimiento del Universo, la Tierra, la vida y la Cultura Ambiental.
                 </p>
                 <p>
@@ -110,16 +113,14 @@
 </p>
 <h2>Página Oficial del Museo de Historia Natural</h2>
 <p>
-    Descubre más sobre sus exhibiciones y eventos en su página oficial:  
-    <a href="https://data.sedema.cdmx.gob.mx/museodehistorianatural/" target="_blank" rel="noopener noreferrer">Visita el sitio del Museo de Historia Natural</a>.
+    Descubre más sobre sus exhibiciones y eventos en su página oficial:
+    <a href="https://data.sedema.cdmx.gob.mx/museodehistorianatural/" target="_blank" rel="noopener noreferrer">Visita el sitio del Museo de Historia Natural<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>.
 </p>
         </div>
     </main>
 
     <footer>
-        <p>
-            Mariano Yuffa | 
-                    </p>
+        <p>Mariano Yuffa · Proyecto académico</p>
     </footer>
 </body>
 

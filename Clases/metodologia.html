@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Metodología</title>
+<meta name="description" content="Metodología de enseñanza: gramática práctica, pronunciación y cultura brasileña.">
+<title>Metodología | Clases de Portugués</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23198754'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EMY%3C/text%3E%3C/svg%3E">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -12,10 +14,13 @@
 <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido principal</a>
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success" aria-label="Menú principal">
 <div class="container">
-<a class="navbar-brand text-white" href="index.html">Portugués 2026 🇧🇷</a>
-<div class="collapse navbar-collapse show">
+<a class="navbar-brand text-white" href="index.html">Portugués 2026 <span aria-hidden="true">🇧🇷</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
 <li class="nav-item"><a class="nav-link text-white" href="clases.html">Clases</a></li>
@@ -32,37 +37,37 @@
 <h1 class="text-center mb-4">Metodología de Enseñanza</h1>
 
 <ul class="nav nav-tabs" role="tablist" aria-label="Temas de la metodología">
-<li class="nav-item">
+<li class="nav-item" role="presentation">
 <button class="nav-link active" data-bs-toggle="tab"
-data-bs-target="#gramatica" id="gramatica-tab" aria-controls="gramatica"
-role="tab">Gramática</button>
+data-bs-target="#gramatica" id="gramatica-tab" type="button" role="tab"
+aria-controls="gramatica" aria-selected="true">Gramática</button>
 </li>
-<li class="nav-item">
+<li class="nav-item" role="presentation">
 <button class="nav-link" data-bs-toggle="tab"
-data-bs-target="#pronunciacion" id="pronunciacion-tab" aria-controls="pronunciacion"
-role="tab">Pronunciación</button>
+data-bs-target="#pronunciacion" id="pronunciacion-tab" type="button" role="tab"
+aria-controls="pronunciacion" aria-selected="false">Pronunciación</button>
 </li>
-<li class="nav-item">
+<li class="nav-item" role="presentation">
 <button class="nav-link" data-bs-toggle="tab"
-data-bs-target="#cultura" id="cultura-tab" aria-controls="cultura"
-role="tab">Cultura</button>
+data-bs-target="#cultura" id="cultura-tab" type="button" role="tab"
+aria-controls="cultura" aria-selected="false">Cultura</button>
 </li>
 </ul>
 
 <div class="tab-content p-4 border border-top-0">
 
-<div class="tab-pane fade show active" id="gramatica" aria-labelledby="gramatica-tab" role="tabpanel">
-<h3>📚 Gramática práctica</h3>
+<div class="tab-pane fade show active" id="gramatica" role="tabpanel" aria-labelledby="gramatica-tab" tabindex="0">
+<h2 class="h4"><span aria-hidden="true">📚</span> Gramática práctica</h2>
 <p>Explicaciones claras aplicadas a situaciones reales.</p>
 </div>
 
-<div class="tab-pane fade" id="pronunciacion" aria-labelledby="pronunciacion-tab" role="tabpanel">
-<h3>🗣️ Pronunciación</h3>
+<div class="tab-pane fade" id="pronunciacion" role="tabpanel" aria-labelledby="pronunciacion-tab" tabindex="0">
+<h2 class="h4"><span aria-hidden="true">🗣️</span> Pronunciación</h2>
 <p>Trabajo fonético y auditivo en cada sesión, para que tengas una buena pronunciación desde el inicio.</p>
 </div>
 
-<div class="tab-pane fade" id="cultura" aria-labelledby="cultura-tab" role="tabpanel">
-<h3>🌎 Cultura brasileña</h3>
+<div class="tab-pane fade" id="cultura" role="tabpanel" aria-labelledby="cultura-tab" tabindex="0">
+<h2 class="h4"><span aria-hidden="true">🌎</span> Cultura brasileña</h2>
 <p>Aspectos culturales integrados en cada clase.</p>
 </div>
 
@@ -71,7 +76,7 @@ role="tab">Cultura</button>
 </main>
 
 <footer class="bg-dark text-white text-center py-4">
-© 2026 Mariano Yuffa
+<p class="mb-0">© 2026 Mariano Yuffa · Proyecto académico</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

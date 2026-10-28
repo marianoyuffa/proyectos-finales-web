@@ -14,13 +14,13 @@
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 <div class="container">
-<a class="navbar-brand" href="index.html">Portugués 2026 🇧🇷</a>
+<a class="navbar-brand text-white" href="index.html">Portugués 2026 🇧🇷</a>
 <div class="collapse navbar-collapse show">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-<li class="nav-item"><a class="nav-link" href="clases.html">Clases</a></li>
-<li class="nav-item"><a class="nav-link active" aria-current="page" href="metodologia.html">Metodología</a></li>
-<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="clases.html">Clases</a></li>
+<li class="nav-item"><a class="nav-link text-white active" aria-current="page" href="metodologia.html">Metodología</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
 </ul>
 </div>
 </div>
@@ -31,34 +31,37 @@
 
 <h1 class="text-center mb-4">Metodología de Enseñanza</h1>
 
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-tabs" role="tablist" aria-label="Temas de la metodología">
 <li class="nav-item">
 <button class="nav-link active" data-bs-toggle="tab"
-data-bs-target="#gramatica" role="tab">Gramática</button>
+data-bs-target="#gramatica" id="gramatica-tab" aria-controls="gramatica"
+role="tab">Gramática</button>
 </li>
 <li class="nav-item">
 <button class="nav-link" data-bs-toggle="tab"
-data-bs-target="#pronunciacion" role="tab">Pronunciación</button>
+data-bs-target="#pronunciacion" id="pronunciacion-tab" aria-controls="pronunciacion"
+role="tab">Pronunciación</button>
 </li>
 <li class="nav-item">
 <button class="nav-link" data-bs-toggle="tab"
-data-bs-target="#cultura" role="tab">Cultura</button>
+data-bs-target="#cultura" id="cultura-tab" aria-controls="cultura"
+role="tab">Cultura</button>
 </li>
 </ul>
 
 <div class="tab-content p-4 border border-top-0">
 
-<div class="tab-pane fade show active" id="gramatica" role="tabpanel">
+<div class="tab-pane fade show active" id="gramatica" aria-labelledby="gramatica-tab" role="tabpanel">
 <h3>📚 Gramática práctica</h3>
 <p>Explicaciones claras aplicadas a situaciones reales.</p>
 </div>
 
-<div class="tab-pane fade" id="pronunciacion" role="tabpanel">
+<div class="tab-pane fade" id="pronunciacion" aria-labelledby="pronunciacion-tab" role="tabpanel">
 <h3>🗣️ Pronunciación</h3>
 <p>Trabajo fonético y auditivo en cada sesión, para que tengas una buena pronunciación desde el inicio.</p>
 </div>
 
-<div class="tab-pane fade" id="cultura" role="tabpanel">
+<div class="tab-pane fade" id="cultura" aria-labelledby="cultura-tab" role="tabpanel">
 <h3>🌎 Cultura brasileña</h3>
 <p>Aspectos culturales integrados en cada clase.</p>
 </div>
